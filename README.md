@@ -2,7 +2,7 @@
 1. Install python3
 2. Install pip3
 3. ```pip install -r requirements.txt```
-4. ```flask --app services/app run```
+4. ```flask --app services/app run```\n
 Flask service is now runnning.
 Example Usage:
 Run the given client file
