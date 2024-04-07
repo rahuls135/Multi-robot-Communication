@@ -7,13 +7,16 @@
 
 Flask service is now runnning.
 
-## Example Usage:
+# Example Usage:
 
+This program can either be ran using the given client files, or using curl.
+
+## Option 1: Client Files
 Run the given client file(s)
 
 ```python3 client_robot#.py```
 
-Using curl
+## Option 2: Using CURL
 
 ### GET
 
