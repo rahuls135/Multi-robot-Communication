@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from constants import BASE_URL, BASE_PORT
 
 app = Flask(__name__)
 
@@ -42,4 +43,4 @@ def get_robot_attribute(robot_id, attribute):
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host="10.6.208.70")
+    app.run(debug=True, host=BASE_URL, port=BASE_PORT)

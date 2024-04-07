@@ -1,28 +1,28 @@
 import requests
+from constants import SERVER_IP
 
-# Base URL of the Flask API
-BASE_URL = 'http://127.0.0.1:5000'
 
 # Function to retrieve status of a robot
 def get_robot_status(robot_id):
-    response = requests.get(f'{BASE_URL}/robot/{robot_id}')
+    response = requests.get(f'{SERVER_IP}/get_robot/{robot_id}')
     return response.json()
 
 # Function to retrieve status of a specific attribute of a robot
 def get_robot_attribute(robot_id, attribute):
-    response = requests.get(f'{BASE_URL}/robot/{robot_id}/{attribute}')
+    response = requests.get(f'{SERVER_IP}/get_robot/{robot_id}/{attribute}')
     return response.json()
 
 # Function to update status of a robot
 def update_robot_status(robot_id, data):
-    response = requests.put(f'{BASE_URL}/robot/{robot_id}', json=data)
+    response = requests.put(f'{SERVER_IP}/update_robot/{robot_id}', json=data)
     return response.json()
 
 # Function to update status of a robot
 def update_robot_attribute(robot_id, attribute, value):
     data = {attribute: value}
-    response = requests.put(f'{BASE_URL}/robot/{robot_id}', json=data)
+    response = requests.put(f'{SERVER_IP}/update_robot/{robot_id}', json=data)
     return response.json()
+
 
 def main():
     # Updates Robot2, Gets Robot1
