@@ -9,7 +9,9 @@ Flask service is now runnning.
 
 # Example Usage:
 *Note: `{robotID}` is either "robot1" or "robot2"
+
 *`<SERVER_IP>` is defaulted to 127.0.0.1 in Flask, but can be manually changed
+
 *`<SERVER_PORT>` is defaulted to 5000 in Flask, but can be manually changed
 
 First, run the server
