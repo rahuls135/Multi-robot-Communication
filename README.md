@@ -16,7 +16,7 @@ Run the given client file(s)
 
 ```python3 client_robot#.py```
 
-## Option 2: Using CURL
+## Option 2: Using curl
 
 ### GET
 
