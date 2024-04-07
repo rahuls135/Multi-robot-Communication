@@ -16,14 +16,14 @@ robot_statuses = {
     }
 }
 
-@app.route('/robot/<robot_id>', methods=['GET'])
+@app.route('/get_robot/<robot_id>', methods=['GET'])
 def get_robot_status(robot_id):
     if robot_id not in robot_statuses:
         return jsonify({'error': 'Robot not found'}), 404
     return jsonify(robot_statuses[robot_id])
 
 
-@app.route('/robot/<robot_id>', methods=['PUT'])
+@app.route('/update_robot/<robot_id>', methods=['PUT'])
 def update_robot_status(robot_id):
     if robot_id not in robot_statuses:
         return jsonify({'error': 'Robot not found'}), 404
@@ -32,7 +32,7 @@ def update_robot_status(robot_id):
     return jsonify({'message': f'Status of {robot_id} updated successfully'})
 
 
-@app.route('/robot/<robot_id>/<attribute>', methods=['GET'])
+@app.route('/get_robot/<robot_id>/<attribute>', methods=['GET'])
 def get_robot_attribute(robot_id, attribute):
     if robot_id not in robot_statuses:
         return jsonify({'error': 'Robot not found'}), 404
@@ -42,4 +42,4 @@ def get_robot_attribute(robot_id, attribute):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host="10.6.208.70")

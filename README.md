@@ -23,10 +23,9 @@ Server can either be invoked using the given client files, or using curl.
 
 Run the given client file(s)
 
-```python3 client_robot1.py```
+`python3 client_robot1.py`
 
-```python3 client_robot2.py```
-`python3 client_robot#.py`
+`python3 client_robot2.py`
 
 ## Option 2: Using curl
 ### GET
