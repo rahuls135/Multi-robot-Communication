@@ -1,5 +1,6 @@
 import requests
-from constants import SERVER_IP
+from server_config import SERVER_IP
+
 
 # Function to retrieve status of a robot
 def get_robot_status(robot_id):

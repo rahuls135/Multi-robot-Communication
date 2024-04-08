@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from constants import BASE_URL, BASE_PORT
+from server_config import BASE_URL, BASE_PORT
 
 app = Flask(__name__)
 

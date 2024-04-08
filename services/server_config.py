@@ -1,5 +1,5 @@
 
-##### Change to your Server IP and Port #####
+##### Change to your device IP and Port #####
 BASE_URL = "127.0.0.1"
 BASE_PORT = "5000"
 
