@@ -10,13 +10,15 @@ Run via Flask: `$ flask --app env/services/server run`
 Server is now runnning.
 
 ## Usage
-> Hey! The following step is required for multiple device connection (two computers)!
+> Hey! This part is required for multiple device connection (2+ computers)!
 
 In services/server_config.py, change `<HOST_URL>` to server device IP. Change `<PORT>` at discretion.
 
 *`<HOST_URL>` is defaulted to 127.0.0.1 in Flask.
 
 *`<PORT>` is defaulted to 5000 in Flask.
+
+-----
 Server can either be invoked using the given client files, or using `curl`.
 
 ### Option 1: Client Files
